@@ -2,6 +2,7 @@ package main
 
 import (
 	"AoC24/dayOne"
+	"AoC24/dayOne/helper"
 	"fmt"
 	"log"
 	"os"
@@ -14,7 +15,7 @@ func main() {
 	}
 
 	filename := os.Args[1]
-	left, right, err := dayOne.ParseInputFromFile(filename)
+	left, right, err := helper.ParseInputFromFile(filename)
 	if err != nil {
 		log.Fatalf("Error reading file: %v\n", err)
 	}
